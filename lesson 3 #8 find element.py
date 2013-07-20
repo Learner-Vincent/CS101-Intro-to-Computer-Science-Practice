@@ -22,3 +22,21 @@ print find_element([1,2,3],3)
 
 print find_element(['alpha','beta'],'gamma')
 #>>> -1
+
+
+#We could also use while loop
+
+def find_element(p, target):
+    i = 0
+    while i < len(p):
+        if p[i] == target:
+            return i
+        i = i + 1
+    return -1
+
+
+print find_element([1,2,3],3)
+#>>> 2
+
+print find_element(['alpha','beta'],'gamma')
+#>>> -1

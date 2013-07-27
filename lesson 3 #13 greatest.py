@@ -21,3 +21,22 @@ print greatest([4,23,1])
 #>>> 23
 print greatest([])
 #>>> 0
+
+
+
+# An easy version 
+
+def greatest(p):
+    bigger = 0
+    for e in p:
+        if e > bigger:
+            bigger = e
+    return bigger
+        
+            
+print greatest([4,23,1])
+#>>> 23
+print greatest([])
+#>>> 0
+
+    

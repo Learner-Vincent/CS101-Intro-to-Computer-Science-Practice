@@ -13,10 +13,8 @@
 def add_to_index(index, keyword, url):
     for entry in index:
         if entry[0] == keyword:
-            for urls in entry[1]:
-                if url == urls:
-                    return
-            entry[1].append(url)
+            if not url in entry[1]:
+                entry[1].append(url)
             return
     # not found, add new keyword to index
     index.append([keyword, [url]])

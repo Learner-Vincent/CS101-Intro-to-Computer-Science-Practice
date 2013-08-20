@@ -15,3 +15,12 @@
 population = {'Shanghai':17.8, 'Istanbul': 13.3, 'Karachi': 13.0, 'Mumbai': 12.5}
 
 print population['Shanghai']
+
+# Another version
+population = { }
+population['Shanghai'] = 17.8
+population['Istanbul'] = 13.3
+population['Karachi'] = 13.0
+population['Mubai'] = 12.5
+
+print population['Istanbul']

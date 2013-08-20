@@ -12,9 +12,8 @@
 
 def hashtable_add(htable,key,value):
     # your code here
-    htable[hash_string(key, len(htable))].append([key, value])
+    hashtable_get_bucket(htable, key).append([key, value])
     return htable  
-    
     
 def hashtable_get_bucket(htable,keyword):
     return htable[hash_string(keyword,len(htable))]
